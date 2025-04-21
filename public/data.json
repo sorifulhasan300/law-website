@@ -1,0 +1,185 @@
+
+{
+  "lawyer": [
+    {
+      "id": 1,
+      "name": "Awlad Hossain",
+      "specialty": "Criminal Expert",
+      "license_number": "BD 12451254",
+      "experience": "5+ Years",
+      "availability": ["Sunday", "Monday", "Thursday"],
+      "consultation_fee": 273,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation."
+      },
+      "image": "https://i.ibb.co.com/vx0QrVwm/34cde160-93e7-4bc7-8f13-6a305d8157d0.png"
+    },
+    {
+      "id": 2,
+      "name": "Faria Islam",
+      "specialty": "Family Law Specialist",
+      "license_number": "BD 76382913",
+      "experience": "7+ Years",
+      "availability": ["Tuesday", "Wednesday", "Friday"],
+      "consultation_fee": 350,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Bookings available for today only due to high demand."
+      },
+      "image": "https://i.ibb.co.com/6cqbmYDG/5b572aaa-1401-4b6a-8737-93890a858899.png"
+    },
+    {
+      "id": 3,
+      "name": "Rezaul Karim",
+      "specialty": "Property Law Consultant",
+      "license_number": "BD 45128799",
+      "experience": "10+ Years",
+      "availability": ["Monday", "Thursday"],
+      "consultation_fee": 400,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": false,
+        "message": "Please check back tomorrow for availability."
+      },
+      "image": "https://i.ibb.co.com/WWZX1CCY/79c93de4-8b08-40c7-aaf0-b8ca04a86d7e.png"
+    },
+    {
+      "id": 4,
+      "name": "Tahmina Akter",
+      "specialty": "Cyber Law Expert",
+      "license_number": "BD 99881234",
+      "experience": "4+ Years",
+      "availability": ["Sunday", "Tuesday"],
+      "consultation_fee": 290,
+      "status": "Unavailable",
+      "appointment": {
+        "can_book_today": false,
+        "message": "Currently unavailable. Please try later."
+      },
+      "image": "https://i.ibb.co.com/NdsPRjhV/94ec9ad2-9453-4327-9c3d-375a5e7c87ae.png"
+    },
+    {
+      "id": 5,
+      "name": "Hasan Mahmud",
+      "specialty": "Immigration Lawyer",
+      "license_number": "BD 12039485",
+      "experience": "6+ Years",
+      "availability": ["Wednesday", "Saturday"],
+      "consultation_fee": 310,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Appointments open for today only."
+      },
+      "image": "https://i.ibb.co.com/PGkk14pL/893ed39e-387c-45f6-9287-f6d0f643fd0f.png"
+    },
+    {
+      "id": 6,
+      "name": "Lubna Jahan",
+      "specialty": "Corporate Law Expert",
+      "license_number": "BD 87234509",
+      "experience": "8+ Years",
+      "availability": ["Monday", "Friday"],
+      "consultation_fee": 500,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Limited slots today."
+      },
+      "image": "https://i.ibb.co.com/9mytf3t5/pixlr-image-generator-1b9ba442-c859-479f-ad5b-1b0df64ed895.webp"
+    },
+    {
+      "id": 7,
+      "name": "Shahriar Kabir",
+      "specialty": "Labor Law Advisor",
+      "license_number": "BD 62345789",
+      "experience": "3+ Years",
+      "availability": ["Tuesday", "Thursday", "Saturday"],
+      "consultation_fee": 260,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Book quickly — limited slots!"
+      },
+      "image": "https://i.ibb.co.com/DDkZyBJq/pixlr-image-generator-f1fa8f38-3ca1-40b6-9d4d-2556b6158d7f.webp"
+    },
+    {
+      "id": 8,
+      "name": "Mouly Rahman",
+      "specialty": "Environmental Law Specialist",
+      "license_number": "BD 83746509",
+      "experience": "9+ Years",
+      "availability": ["Sunday", "Wednesday"],
+      "consultation_fee": 375,
+      "status": "Unavailable",
+      "appointment": {
+        "can_book_today": false,
+        "message": "Please wait for next available slot."
+      },
+      "image": "https://i.ibb.co.com/FLng9rH9/pixlr-image-generator-69bc20f6-a3a9-4c86-ad63-93086c6cded0.webp"
+    },
+    {
+      "id": 9,
+      "name": "Tanvir Alam",
+      "specialty": "Tax Law Expert",
+      "license_number": "BD 99012378",
+      "experience": "6+ Years",
+      "availability": ["Monday", "Thursday"],
+      "consultation_fee": 330,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Today’s appointments only."
+      },
+      "image": "https://i.ibb.co.com/sdLskW5D/pixlr-image-generator-e45d6487-1af3-431c-b0ae-ff05f70fc473.webp"
+    },
+    {
+      "id": 10,
+      "name": "Sharmin Haque",
+      "specialty": "Constitutional Law Consultant",
+      "license_number": "BD 56789012",
+      "experience": "5+ Years",
+      "availability": ["Tuesday", "Friday"],
+      "consultation_fee": 295,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": false,
+        "message": "Fully booked today."
+      },
+      "image": "https://i.ibb.co.com/wFZLfsTC/pixlr-image-generator-cf36efba-a91c-4db7-880e-1ad61bcfbae7.webp"
+    },
+    {
+      "id": 11,
+      "name": "Mahfuz Rahman",
+      "specialty": "Banking Law Advisor",
+      "license_number": "BD 45671239",
+      "experience": "7+ Years",
+      "availability": ["Thursday", "Saturday"],
+      "consultation_fee": 340,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Appointment slots filling fast."
+      },
+      "image": "https://i.ibb.co.com/sdLskW5D/pixlr-image-generator-e45d6487-1af3-431c-b0ae-ff05f70fc473.webp"
+    },
+    {
+      "id": 12,
+      "name": "Nasrin Akhter",
+      "specialty": "Human Rights Lawyer",
+      "license_number": "BD 77778901",
+      "experience": "12+ Years",
+      "availability": ["Sunday", "Tuesday"],
+      "consultation_fee": 450,
+      "status": "Unavailable",
+      "appointment": {
+        "can_book_today": false,
+        "message": "Currently not accepting bookings."
+      },
+      "image": "https://i.ibb.co.com/FLng9rH9/pixlr-image-generator-69bc20f6-a3a9-4c86-ad63-93086c6cded0.webp"
+    }
+  ]
+}
