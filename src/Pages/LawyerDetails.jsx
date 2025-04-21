@@ -1,17 +1,17 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { Navigate, NavLink, useLoaderData, useParams } from "react-router";
+import { saveIdLocalStorage } from "../Utility/saveData";
 
 const LawyerDetails = () => {
-  const { id } = useParams();
-  console.log(id);
-
+  const { Id } = useParams();
   const lawyerData = useLoaderData().lawyer;
-  console.log(lawyerData);
   const layerDetails = lawyerData.find((lawyer) => {
-    return lawyer.id === parseInt(id);
+    return lawyer.id === parseInt(Id);
   });
+
   const {
     name,
+    id,
     experience,
     status,
     specialty,
@@ -19,10 +19,16 @@ const LawyerDetails = () => {
     image,
     availability,
     consultation_fee,
+    appointment,
   } = layerDetails;
 
+  const handleBookDoctor = (id) => {
+    saveIdLocalStorage(id);
+    
+    // Navigate("/myBooking");
+  };
   return (
-    <div className="w-11/12 mx-auto h-dvw">
+    <div className="w-11/12 mx-auto ">
       <div className="h-46 bg-[#0F0F0F15] rounded-2xl mt-8 flex justify-center items-center">
         <div className="p-4 text-center ">
           <h1 className="md:text-3xl text-2xl font-bold ">
@@ -65,6 +71,39 @@ const LawyerDetails = () => {
               </span>
             </p>
           </div>
+        </div>
+      </div>
+      {/* lawyer book card */}
+      <div className="rounded-2xl mt-8 shadow">
+        <h1 className="text-2xl text-center font-bold m-4">
+          Book an Appointment
+        </h1>
+        <div className=" border-b border-dashed border-[#14141420]  m-4"></div>
+        <div className="flex justify-between m-4">
+          <h3 className="font-bold">Availability</h3>
+          <p className="bg-[#09982F20] text-sm text-[#09982F] rounded-2xl p-2 text-center">
+            {appointment.can_book_today
+              ? "Lawyer  Available Today"
+              : "Lawyer Not Available Today"}
+          </p>
+        </div>
+        <div className=" border-b border-dashed border-[#14141420]  m-4"></div>
+        <div className=" mt-4 mb-4 m-4 ">
+          <span className="bg-[#FFA00020] text-[#FFA000] p-1   rounded-4xl">
+            {appointment.can_book_today
+              ? appointment.message
+              : appointment.message}
+          </span>
+        </div>
+        <div className="p-4 m-4">
+          <NavLink to={"/myBooking"}>
+            <button
+              onClick={() => handleBookDoctor(id)}
+              className="w-full btn rounded-4xl bg-[#0EA106] text-white"
+            >
+              Book Appointment Now
+            </button>
+          </NavLink>
         </div>
       </div>
     </div>

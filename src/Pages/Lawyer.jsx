@@ -1,50 +1,42 @@
-import React from "react";
-import { Link } from "react-router";
+import React, { useEffect, useState } from "react";
+
+import LawyerCard from "./LawyerCard";
+import Counter from "./Counter/Counter";
 
 const Lawyer = ({ data }) => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 ">
-      {data?.map((lawyer, index) => {
-        const {
-          name,
-          experience,
-          status,
-          specialty,
-          license_number,
-          image,
-          id,
-        } = lawyer;
+  const [lawyerData, setLawyerData] = useState();
+  const [showAll, setShowAll] = useState(true);
 
-        return (
-          <div key={index} className=" p-4 shadow rounded-2xl mt-8">
-            <div className="flex">
-              <div className="w-40 ">
-                <img className="w-full rounded-2xl" src={image} alt="" />
-              </div>
-              <div className=" gap-4 ml-4">
-                <div className="flex flex-row gap-4">
-                  <p className="bg-[#09982F20] text-sm text-[#09982F] rounded-2xl p-2 text-center">
-                    {status}
-                  </p>
-                  <p className="bg-[#176AE520] text-sm text-[#176AE5] rounded-2xl p-2 text-center">
-                    {experience} Experience
-                  </p>
-                </div>
-                <div className="">
-                  <h1 className="text-3xl font-bold">{name}</h1>
-                  <p>{specialty}</p>
-                  <p>{license_number}</p>
-                  <Link to={`/details/${id}`}>
-                    <button className="border rounded-4xl w-full border-[#176AE520] text-[#176AE5] font-bold">
-                      View Details
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+  useEffect(() => {
+    if (showAll) {
+      setLawyerData(data?.slice(0, 6));
+    } else {
+      setLawyerData(data);
+    }
+  }, [data, showAll]);
+
+  const handleShowAll = () => {
+    setShowAll(!showAll);
+  };
+  return (
+    <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+        {lawyerData?.map((lawyer) => (
+          <div>
+            <LawyerCard lawyer={lawyer}></LawyerCard>
           </div>
-        );
-      })}
+        ))}
+      </div>
+      {/* show All and Show Less Button */}
+      <div className=" flex justify-center mt-8">
+        <button
+          onClick={() => handleShowAll()}
+          className="btn place-items-center rounded-4xl bg-[#0EA106] text-white"
+        >
+          {showAll ? "Show All Lawyer " : "Close All Lawyer"}
+        </button>
+      </div>
+      <Counter finalVale={450} duration={3000}></Counter>
     </div>
   );
 };

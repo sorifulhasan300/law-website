@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-overlay rounded-2xl"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="text-center place-items-center">
-          <h1 className="mb-5 text-6xl font-bold max-w-4xl">
+          <h1 className="mb-5 text-3xl  md:text-6xl font-bold max-w-4xl">
             It avoids subjective claims or exaggeration that might raise red
             flags legally
           </h1>

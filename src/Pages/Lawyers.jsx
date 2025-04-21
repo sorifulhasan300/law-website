@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Lawyer from "./Lawyer";
 import { useLoaderData } from "react-router";
 import Hero from "../Components/Hero";
@@ -6,11 +5,10 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 const Lawyers = () => {
-  const [countOn, setCountOn] = useState(false);
-  const data = useLoaderData().lawyer;
-
   // console.log(data);
-
+  const data = useLoaderData().lawyer;
+ 
+  
   return (
     <div className="w-11/12 mx-auto mt-8">
       <Hero></Hero>
@@ -24,17 +22,7 @@ const Lawyers = () => {
           receive quality care you can trust.
         </p>
       </div>
-
       <Lawyer data={data}></Lawyer>
-      {/* counter animation section */}
-      {/* <div className="">
-        <ScrollTrigger
-          onEnter={() => setCountOn(true)}
-          onExit={() => setCountOn(false)}
-        >
-          {countOn && <CountUp delay={2} start={0} end={100}></CountUp>}
-        </ScrollTrigger>
-      </div> */}
     </div>
   );
 };

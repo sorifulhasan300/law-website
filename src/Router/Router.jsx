@@ -5,6 +5,7 @@ import DataPage from "../Pages/Lawyers";
 import Lawyers from "../Pages/Lawyers";
 import LawyerDetails from "../Pages/LawyerDetails";
 import Hero from "../Components/Hero";
+import MyBooking from "../Pages/MyBooking/MyBooking";
 
 const router = createBrowserRouter([
   {
@@ -12,18 +13,22 @@ const router = createBrowserRouter([
     errorElement: <h1>Error Your Page Please check </h1>,
     Component: App,
     children: [
-    
       {
-        index:true,
+        index: true,
         path: "/",
         loader: () => fetch("/data.json"),
         Component: Lawyers,
       },
 
       {
-        path: "/details/:id",
+        path: "/details/:Id",
         loader: () => fetch("/data.json"),
         Component: LawyerDetails,
+      },
+      {
+        path: "/myBooking",
+        loader: () => fetch("/data.json"),
+        Component: MyBooking,
       },
     ],
   },

@@ -6,33 +6,25 @@ const NavBar = () => {
     <div className="flex gap-8">
       <NavLink
         to={"/"}
-        className={({ isActive }) => {
-          isActive ? "border border-b-2" : "";
-        }}
+        className={({ isActive }) => (isActive ? "text-red-500" : "")}
       >
         Home
       </NavLink>
       <NavLink
-        to={"/"}
-        className={({ isActive }) => {
-          isActive ? "border border-b-2" : "";
-        }}
+        to={"myBooking"}
+        className={({ isActive }) => (isActive ? "text-red-500" : "")}
       >
         My-Bookings
       </NavLink>
       <NavLink
-        to={"/"}
-        className={({ isActive }) => {
-          isActive ? "border border-b-2" : "";
-        }}
+        to={"details/id"}
+        className={({ isActive }) => (isActive ? "text-red-500" : "")}
       >
         Blogs
       </NavLink>
       <NavLink
         to={"/"}
-        className={({ isActive }) => {
-          isActive ? "border border-b-2" : "";
-        }}
+        className={({ isActive }) => (isActive ? "text-red-500" : "")}
       >
         Contact Us
       </NavLink>
