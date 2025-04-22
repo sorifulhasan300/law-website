@@ -24,7 +24,7 @@ const LawyerDetails = () => {
 
   const handleBookDoctor = (id) => {
     saveIdLocalStorage(id);
-    
+
     // Navigate("/myBooking");
   };
   return (
@@ -99,7 +99,11 @@ const LawyerDetails = () => {
           <NavLink to={"/myBooking"}>
             <button
               onClick={() => handleBookDoctor(id)}
-              className="w-full btn rounded-4xl bg-[#0EA106] text-white"
+              className={`${
+                appointment.can_book_today
+                  ? "w-full btn rounded-4xl bg-[#0EA106] text-white"
+                  : "w-full btn rounded-4xl bg-red-600 text-white disabled:cursor-not-allowed"
+              }`}
             >
               Book Appointment Now
             </button>

@@ -1,13 +1,17 @@
 import React from "react";
 import BookingCart from "../BookingCart/BookingChart";
 import BookingChart from "../BookingCart/BookingChart";
-import { deleteIdLocalStorage } from "../../Utility/saveData";
+import {
+  deleteIdLocalStorage,
+  getIdLocalStorage,
+} from "../../Utility/saveData";
 
-const BookingCard = ({ filterLowyer }) => {
+const BookingCard = ({ filterLowyer, booking, setBooking }) => {
   const { name, id, specialty, consultation_fee } = filterLowyer;
   const handleDeleteBook = (id) => {
     deleteIdLocalStorage(id);
-    location.reload();
+    const bookingData = booking.filter((book) => book.id !== id);
+    setBooking(bookingData);
   };
   return (
     <div className="shadow-sm border-1 border-gray-300 p-4 mt-8 rounded-2xl mb-20">

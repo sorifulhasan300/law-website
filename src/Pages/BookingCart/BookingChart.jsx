@@ -9,10 +9,10 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const BookingChart = ({ filterId }) => {
+const BookingChart = ({ booking }) => {
   const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
-  const data = filterId.map((doctorData) => {
+  const data = booking.map((doctorData) => {
     const doctor = {
       fee: doctorData.consultation_fee,
       name: doctorData.name,

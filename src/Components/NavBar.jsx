@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const NavBar = () => {
   const navItem = (
-    <div className="flex gap-8">
+    <div className="flex lg:flex-row  flex-col gap-4  lg:gap-8">
       <NavLink
         to={"/"}
         className={({ isActive }) => (isActive ? "text-red-500" : "")}
@@ -66,7 +66,7 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{navItem}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn rounded-2xl bg-[#0EA106] text-white">Contact Now</a>
+        <a className="btn rounded-2xl   bg-[#0EA106] text-white">Contact Now</a>
       </div>
     </div>
   );

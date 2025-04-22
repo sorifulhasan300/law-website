@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import LawyerCard from "./LawyerCard";
 import Counter from "./Counter/Counter";
+import Spiner from "../Components/Spiner/Spiner";
 
 const Lawyer = ({ data }) => {
   const [lawyerData, setLawyerData] = useState();
@@ -36,7 +37,7 @@ const Lawyer = ({ data }) => {
           {showAll ? "Show All Lawyer " : "Close All Lawyer"}
         </button>
       </div>
-      <Counter finalVale={450} duration={3000}></Counter>
+      <Counter delay={2} end={100}></Counter>
     </div>
   );
 };

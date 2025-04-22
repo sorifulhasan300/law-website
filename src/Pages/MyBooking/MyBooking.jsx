@@ -1,24 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getIdLocalStorage } from "../../Utility/saveData";
 import BookingCard from "./BookingCard";
 import BookingChart from "../BookingCart/BookingChart";
 
 const MyBooking = () => {
+  const [booking, setBooking] = useState([]);
   const data = useLoaderData().lawyer;
-  const storageId = getIdLocalStorage();
-  const filterId = data.filter((lowId) => storageId.includes(lowId.id));
-  console.log(filterId);
+  useEffect(() => {
+    const storageId = getIdLocalStorage();
+    const filterId = data.filter((lowId) => storageId.includes(lowId.id));
+    setBooking(filterId);
+  }, [data]);
 
   return (
     <div className="">
-      {filterId.length < 1 ? (
+      {booking.length < 1 ? (
         <div className="h-dvh">
           <h1>No Data Avail Availe</h1>
         </div>
       ) : (
         <div className="">
-          <BookingChart filterId={filterId}></BookingChart>
+          <BookingChart booking={booking}></BookingChart>
           <div className=" text-center p-2 mt-8">
             <h1 className="text-xl lg:text-3xl  font-bold p-2">
               My Today Appointments
@@ -29,8 +32,12 @@ const MyBooking = () => {
             </p>
           </div>
           <div className="">
-            {filterId.map((filterLowyer) => (
-              <BookingCard filterLowyer={filterLowyer}></BookingCard>
+            {booking.map((filterLowyer) => (
+              <BookingCard
+                filterLowyer={filterLowyer}
+                booking={booking}
+                setBooking={setBooking}
+              ></BookingCard>
             ))}
           </div>
         </div>
