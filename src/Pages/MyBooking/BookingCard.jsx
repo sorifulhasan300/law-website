@@ -1,10 +1,8 @@
 import React from "react";
 import BookingCart from "../BookingCart/BookingChart";
 import BookingChart from "../BookingCart/BookingChart";
-import {
-  deleteIdLocalStorage,
-  getIdLocalStorage,
-} from "../../Utility/saveData";
+import { deleteIdLocalStorage } from "../../Utility/saveData";
+import { toast } from "react-toastify";
 
 const BookingCard = ({ filterLowyer, booking, setBooking }) => {
   const { name, id, specialty, consultation_fee } = filterLowyer;
@@ -12,6 +10,7 @@ const BookingCard = ({ filterLowyer, booking, setBooking }) => {
     deleteIdLocalStorage(id);
     const bookingData = booking.filter((book) => book.id !== id);
     setBooking(bookingData);
+    toast.success("Cencel booking sucsessfuly");
   };
   return (
     <div className="shadow-sm border-1 border-gray-300 p-4 mt-8 rounded-2xl mb-20">

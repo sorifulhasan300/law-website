@@ -3,11 +3,6 @@ import { Navigate, NavLink, useLoaderData, useParams } from "react-router";
 import { saveIdLocalStorage } from "../Utility/saveData";
 
 const LawyerDetails = () => {
-  // const { Id } = useParams();
-  // const lawyerData = useLoaderData().lawyer;
-  // const layerDetails = lawyerData.find((lawyer) => {
-  //   return lawyer.id === parseInt(Id);
-  // });
   const {
     name,
     id,
@@ -23,22 +18,8 @@ const LawyerDetails = () => {
 
   console.log(name);
 
-  // const {
-  //   name,
-  //   id,
-  //   experience,
-  //   status,
-  //   specialty,
-  //   license_number,
-  //   image,
-  //   availability,
-  //   consultation_fee,
-  //   appointment,
-  // } = layerDetails;
-
-  const handleBookDoctor = (id) => {
-    saveIdLocalStorage(id);
-
+  const handleBookDoctor = (id, name) => {
+    saveIdLocalStorage(id, name);
     // Navigate("/myBooking");
   };
   return (
@@ -112,12 +93,8 @@ const LawyerDetails = () => {
         <div className="p-4 m-4">
           <NavLink to={"/myBooking"}>
             <button
-              onClick={() => handleBookDoctor(id)}
-              className={`${
-                appointment.can_book_today
-                  ? "w-full btn rounded-4xl bg-[#0EA106] text-white"
-                  : "w-full btn rounded-4xl bg-red-600 text-white disabled:cursor-not-allowed"
-              }`}
+              onClick={() => handleBookDoctor(id, name)}
+              className="w-full btn rounded-4xl bg-[#0EA106] text-white"
             >
               Book Appointment Now
             </button>
