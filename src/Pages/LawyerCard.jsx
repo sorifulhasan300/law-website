@@ -7,12 +7,12 @@ const LawyerCard = ({ lawyer }) => {
   return (
     <div>
       <div className=" ">
-        <div className=" p-4 shadow rounded-2xl mt-8">
+        <div className=" p-4 shadow rounded-2xl mt-8 ">
           <div className="flex flex-col md:flex-row items-center md:text-start  gap-2 space-y-4">
             <div className="w-40 ">
               <img className="w-full rounded-2xl" src={image} alt="" />
             </div>
-            <div className=" gap-4 ml-4 space-y-4">
+            <div className=" gap-4 ml-4 space-y-4 ">
               <div className="flex flex-row gap-4">
                 <p className="bg-[#09982F20] text-sm text-[#09982F] rounded-2xl p-2 text-center">
                   {status}
@@ -21,13 +21,13 @@ const LawyerCard = ({ lawyer }) => {
                   {experience} Experience
                 </p>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-2  ">
                 <h1 className="text-2xl font-bold">{name}</h1>
                 <p>{specialty}</p>
                 <p>{license_number}</p>
                 <div className="w-">
                   <Link to={`/details/${id}`}>
-                    <button className="border cursor-pointer rounded-4xl w-full border-[#176AE520] text-[#176AE5] font-bold">
+                    <button className="border hover:bg-[#176AE5] hover:text-white cursor-pointer rounded-4xl h-10 w-full border-[#176AE520] text-[#176AE5] font-bold">
                       View Details
                     </button>
                   </Link>

@@ -13,7 +13,7 @@ function App() {
       <ToastContainer></ToastContainer>
       <NavBar></NavBar>
       <div className="w-11/12 mx-auto">
-        <div className="place-items-center">{isNavigating && <Spiner />}</div>
+        <div className="place-items-center mt-20">{isNavigating && <Spiner />}</div>
         <Outlet></Outlet>
       </div>
       <Footer></Footer>

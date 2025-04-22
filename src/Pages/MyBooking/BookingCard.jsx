@@ -24,7 +24,7 @@ const BookingCard = ({ filterLowyer, booking, setBooking }) => {
             className="
           text-[#14141490]"
           >
-            Appointment Fee : {consultation_fee}
+            Appointment Fee : {consultation_fee} taka
           </p>
         </div>
       </div>
@@ -32,7 +32,7 @@ const BookingCard = ({ filterLowyer, booking, setBooking }) => {
       <div className="text-center ">
         <button
           onClick={() => handleDeleteBook(id)}
-          className="w-full btn  rounded-4xl border-[#FF0000] text-red-600"
+          className="w-full btn  rounded-4xl border-[#FF0000] text-red-600 hover:bg-red-600 hover:text-white"
         >
           CancelAppointment
         </button>
