@@ -52,26 +52,29 @@ const Footer = () => {
               width="30"
               height="30"
               src="https://img.icons8.com/color/48/facebook-new.png"
-              alt=""
+              alt="facebook"
             />
           </a>
-          <a href="https://www.facebook.com/sorifulhasan300" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/md-soriful-hasan-53a9b52b3/"
+            target="_blank"
+          >
             <img
               width="30"
               height="30"
               src="https://img.icons8.com/fluency/48/linkedin.png"
-              alt=""
+              alt="linkedin"
             />
           </a>
-          <a href="https://www.facebook.com/sorifulhasan300" target="_blank">
+          <a href="https://www.youtube.com/@codingwithhasan300" target="_blank">
             <img
               width="30"
               height="30"
               src="https://img.icons8.com/color/48/youtube-play.png"
-              alt=""
+              alt="Youtube"
             />
           </a>
-          <a href="https://www.facebook.com/sorifulhasan300" target="_blank">
+          <a href="https://www.instagram.com/hasibhasan1642/" target="_blank">
             <img
               width="30"
               height="30"

@@ -18,7 +18,7 @@ const Counter = () => {
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 place-items-center mt-8 gap-8">
         <div className="content w-full   place-items-center shadow rounded-xl bg-gray-100 my-4 py-4">
-          <img src="/public/lawyer.png" alt="" />
+          <img src="/lawyer.png" alt="" />
           <CountUp
             className="text-4xl font-bold mt-4"
             end={199}
@@ -29,7 +29,7 @@ const Counter = () => {
           <p className="text-gray-500">Total Lawyer</p>
         </div>
         <div className="content w-full   place-items-center shadow rounded-xl bg-gray-100 my-4 py-4">
-          <img src="public/star.png" alt="" />
+          <img src="/star.png" alt="" />
           <CountUp
             className="text-4xl font-bold mt-4"
             end={467}
@@ -40,7 +40,7 @@ const Counter = () => {
           <p className="text-gray-500">Total Reviews</p>
         </div>
         <div className="content w-full   place-items-center shadow rounded-xl bg-gray-100 my-4 py-4">
-          <img src="public/hammer.png" alt="" />
+          <img src="/hammer.png" alt="" />
 
           <CountUp
             className="text-4xl font-bold mt-4"
@@ -52,7 +52,7 @@ const Counter = () => {
           <p className="text-gray-500">Cases Initiated</p>
         </div>
         <div className="content w-full   place-items-center shadow rounded-xl bg-gray-100 my-4 py-4">
-          <img src="public/group.png" alt="" />
+          <img src="/group.png" alt="" />
           <CountUp
             className="text-4xl font-bold mt-4"
             end={300}

@@ -20,7 +20,7 @@ const Lawyer = ({ data }) => {
   };
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mx-auto">
         {lawyerData?.map((lawyer, index) => (
           <div key={index}>
             <LawyerCard lawyer={lawyer}></LawyerCard>

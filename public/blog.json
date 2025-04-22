@@ -1,27 +1,27 @@
 [
   {
-    "question": "What is `useState` and how does it work in React?",
-    "answer": "",
+    "question": "1. What is `useState` and how does it work in React?",
+    "answer": " use state is a react hook , this hook use to data set and change state,useState that lets add state to functional components. use state most useful hook in react js, useState accepts an initial state and returns tow values 1. The current state 2. A function that updates the state . ",
     "date": "2024-11-05"
   },
   {
-    "question": "What is the purpose of `useEffect` in React?",
-    "answer": "",
+    "question": "2. What is the purpose of `useEffect` in React?",
+    "answer": " useEffect Hook in React is used to manage side effects in functional components. Side effects are operations that interact with the outside world,such as fetching data from an API, updating the DOM directly or setting up timers.useEffect allow you to perfrom these actions after the component render . ",
     "date": "2025-01-13"
   },
   {
-    "question": "What is a custom hook in React and when should you use one?",
-    "answer": "",
+    "question": "3. What is a custom hook in React and when should you use one?",
+    "answer": "in React, components often share similer logic , such as fetching data ar handling form inputs.instead of reapating this logic across multiple components,We can extract it into a custom hook. Custom hooks must follow Reacts naming convention and start with use This ensures React recognize it as a hook and enforces hook rules",
     "date": "2024-12-27"
   },
   {
-    "question": "Difference between controlled and uncontrolled components. Which one is better?",
-    "answer": "",
+    "question": "4. Difference between controlled and uncontrolled components. Which one is better?",
+    "answer": "Control component is a control all way for use , but un Control component don't control and we are when control component than we are updating this component easily , when we are use un control components then we don't customize easily . this way to deffrant control and uncontrol component. control component is better than un control component.",
     "date": "2025-03-19"
   },
   {
-    "question": "Tell us something about `useFormStatus()` in React.",
-    "answer": "",
+    "question": "5. Tell us something about `useFormStatus()` in React.",
+    "answer": " To get status information , the submit component must be rendered within a <from>. the hook retuns information like the pending property whih tells you if the form is actively submitting . you can use the data property of the status information returned from useFormStatus to display what data is being submitted by the user. ",
     "date": "2024-10-22"
   }
 ]

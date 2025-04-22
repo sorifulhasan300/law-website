@@ -11,12 +11,12 @@ const Hero = () => {
       <div className="hero-overlay rounded-2xl"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="text-center place-items-center">
-          <h1 className="mb-5 text-3xl  md:text-3xl font-bold max-w-4xl">
+          <h1 className="mb-5 text-2xl  md:text-3xl font-bold max-w-4xl">
             It avoids subjective claims or exaggeration that might raise red
             flags legally
           </h1>
           <div className="">
-            <p className="mb-5 line-clamp-8 text-shadow-white">
+            <p className="mb-5 line-clamp-8 text-sm text-shadow-white">
               Our platform connects you with verified, experienced doctors
               across various specialties — all at your convenience. Whether it's
               a <br /> routine checkup or urgent consultation, book appointments

@@ -1,4 +1,3 @@
-
 {
   "lawyer": [
     {
@@ -18,21 +17,6 @@
     },
     {
       "id": 2,
-      "name": "Faria Islam",
-      "specialty": "Family Law Specialist",
-      "license_number": "BD 76382913",
-      "experience": "7+ Years",
-      "availability": ["Tuesday", "Wednesday", "Friday"],
-      "consultation_fee": 5000,
-      "status": "Available",
-      "appointment": {
-        "can_book_today": true,
-        "message": "Bookings available for today only due to high demand."
-      },
-      "image": "https://i.ibb.co.com/6cqbmYDG/5b572aaa-1401-4b6a-8737-93890a858899.png"
-    },
-    {
-      "id": 3,
       "name": "Rezaul Karim",
       "specialty": "Property Law Consultant",
       "license_number": "BD 45128799",
@@ -47,7 +31,37 @@
       "image": "https://i.ibb.co.com/WWZX1CCY/79c93de4-8b08-40c7-aaf0-b8ca04a86d7e.png"
     },
     {
+      "id": 3,
+      "name": "Faria Islam",
+      "specialty": "Family Law Specialist",
+      "license_number": "BD 76382913",
+      "experience": "7+ Years",
+      "availability": ["Tuesday", "Wednesday", "Friday"],
+      "consultation_fee": 5000,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Bookings available for today only due to high demand."
+      },
+      "image": "https://i.ibb.co.com/6cqbmYDG/5b572aaa-1401-4b6a-8737-93890a858899.png"
+    },
+    {
       "id": 4,
+      "name": "Tanvir Alam",
+      "specialty": "Tax Law Expert",
+      "license_number": "BD 99012378",
+      "experience": "6+ Years",
+      "availability": ["Monday", "Thursday"],
+      "consultation_fee": 4000,
+      "status": "Available",
+      "appointment": {
+        "can_book_today": true,
+        "message": "Today’s appointments only."
+      },
+      "image": "https://i.ibb.co.com/sdLskW5D/pixlr-image-generator-e45d6487-1af3-431c-b0ae-ff05f70fc473.webp"
+    },
+    {
+      "id": 5,
       "name": "Tahmina Akter",
       "specialty": "Cyber Law Expert",
       "license_number": "BD 99881234",
@@ -60,21 +74,6 @@
         "message": "Currently unavailable. Please try later."
       },
       "image": "https://i.ibb.co.com/NdsPRjhV/94ec9ad2-9453-4327-9c3d-375a5e7c87ae.png"
-    },
-    {
-      "id": 5,
-      "name": "Hasan Mahmud",
-      "specialty": "Immigration Lawyer",
-      "license_number": "BD 12039485",
-      "experience": "6+ Years",
-      "availability": ["Wednesday", "Saturday"],
-      "consultation_fee": 6000,
-      "status": "Available",
-      "appointment": {
-        "can_book_today": true,
-        "message": "Appointments open for today only."
-      },
-      "image": "https://i.ibb.co.com/PGkk14pL/893ed39e-387c-45f6-9287-f6d0f643fd0f.png"
     },
     {
       "id": 6,
@@ -123,18 +122,18 @@
     },
     {
       "id": 9,
-      "name": "Tanvir Alam",
-      "specialty": "Tax Law Expert",
-      "license_number": "BD 99012378",
+      "name": "Hasan Mahmud",
+      "specialty": "Immigration Lawyer",
+      "license_number": "BD 12039485",
       "experience": "6+ Years",
-      "availability": ["Monday", "Thursday"],
-      "consultation_fee": 4000,
+      "availability": ["Wednesday", "Saturday"],
+      "consultation_fee": 6000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
-        "message": "Today’s appointments only."
+        "message": "Appointments open for today only."
       },
-      "image": "https://i.ibb.co.com/sdLskW5D/pixlr-image-generator-e45d6487-1af3-431c-b0ae-ff05f70fc473.webp"
+      "image": "https://i.ibb.co.com/PGkk14pL/893ed39e-387c-45f6-9287-f6d0f643fd0f.png"
     },
     {
       "id": 10,
@@ -164,7 +163,7 @@
         "can_book_today": true,
         "message": "Appointment slots filling fast."
       },
-      "image": "https://i.ibb.co.com/sdLskW5D/pixlr-image-generator-e45d6487-1af3-431c-b0ae-ff05f70fc473.webp"
+      "image": "https://i.ibb.co.com/LzLWrtnp/0fadd890-e5b5-49df-b33f-6401f7822867.webp"
     },
     {
       "id": 12,
@@ -179,7 +178,7 @@
         "can_book_today": false,
         "message": "Currently not accepting bookings."
       },
-      "image": "https://i.ibb.co.com/FLng9rH9/pixlr-image-generator-69bc20f6-a3a9-4c86-ad63-93086c6cded0.webp"
+      "image": "https://i.ibb.co.com/FkFK3jhX/6cc3234f-d366-4e3c-aea3-804733ca1fef.png"
     }
   ]
 }
