@@ -6,7 +6,7 @@ const NoBookingFound = () => {
     <div className="w-full h-dvh place-items-center justify-center   flex ">
       <div className="text-center place-items-center space-y-4">
         <div className="w-sm ">
-          <img src="/public/bookingnotfound.svg" alt="" />
+          <img src="/bookingnotfound.svg" alt="" />
         </div>
         <h1 className="text-3xl font-bold">
           You Have not Booked any appointment yet

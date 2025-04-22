@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router";
 
-
 const NoLawyerFound = () => {
   return (
     <div className="h-dvh flex flex-col justify-center items-center space-y-4">
       <div className="w-sm ">
-        <img src="/public/datanotfound.svg" alt="" />
+        <img src="/datanotfound.svg" alt="" />
       </div>
       <h1 className="text-3xl font-bold ">Lawyer Not Found</h1>
       <NavLink to={"/"}>

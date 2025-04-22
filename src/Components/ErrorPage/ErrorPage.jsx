@@ -8,7 +8,7 @@ const ErrorPage = () => {
       <NavBar></NavBar>
       <div className="w-full flex flex-col justify-center mt-32 items-center">
         <div className="w-sm lg:w-xl">
-          <img className="" src="/public/pagenotfound.svg" alt="" />
+          <img className="" src="/pagenotfound.svg" alt="" />
         </div>
         <div className="">
           <h1 className="text-4xl font-bold text-red-400 mt-4">
