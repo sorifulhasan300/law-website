@@ -10,7 +10,7 @@ const Counter = () => {
   return (
     <div className="mt-25 ">
       <div className="text-center">
-        <h1 className="text-2xl font-bold">We Provide Best Law Services</h1>
+        <h1 className="text-3xl font-bold">We Provide Best Law Services</h1>
         <p>
           Our platform connects you with verified, experienced Lawyers across
           various specialities — all at your convenience.
@@ -52,7 +52,7 @@ const Counter = () => {
           <p className="text-gray-500">Cases Initiated</p>
         </div>
         <div className="content w-full   place-items-center shadow rounded-xl bg-gray-100 my-4 py-4">
-          <img src="/group.png" alt="" />
+          <img src="/Group.png" alt="" />
           <CountUp
             className="text-4xl font-bold mt-4"
             end={300}

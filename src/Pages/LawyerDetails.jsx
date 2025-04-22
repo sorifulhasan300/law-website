@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Navigate,
-  NavLink,
-  useLoaderData,
-  useNavigate,
-  useParams,
-} from "react-router";
+import { Navigate, NavLink, useLoaderData, useNavigate } from "react-router";
 import { saveIdLocalStorage } from "../Utility/saveData";
 
 const LawyerDetails = () => {
@@ -58,7 +52,7 @@ const LawyerDetails = () => {
             <h1 className="text-2xl  font-bold">{name}</h1>
             <div className="flex gap-2 text-sm text-gray-500 ">
               <p>{specialty}</p>
-              <p>License No: {license_number}</p>
+              <p>® License No: {license_number}</p>
             </div>
             <div className="flex gap-2">
               <p className="font-bold text-gray-500 ">{status}</p>

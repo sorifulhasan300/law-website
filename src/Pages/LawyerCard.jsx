@@ -21,11 +21,13 @@ const LawyerCard = ({ lawyer }) => {
                   {experience} Experience
                 </p>
               </div>
-              <div className="space-y-2  ">
-                <h1 className="text-2xl font-bold">{name}</h1>
-                <p>{specialty}</p>
-                <p>{license_number}</p>
-                <div className="w-">
+              <div className="">
+                <h1 className="text-2xl font-bold mb-1">{name}</h1>
+      
+                <div className="border-dashed border border-gray-400 mb-2"></div>
+                <p className="text-gray-500">{specialty}</p>
+                <p className="text-gray-500">®License No: {license_number}</p>
+                <div className="mt-2">
                   <Link to={`/details/${id}`}>
                     <button className="border hover:bg-[#176AE5] hover:text-white cursor-pointer rounded-4xl h-10 w-full border-[#176AE520] text-[#176AE5] font-bold">
                       View Details

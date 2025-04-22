@@ -10,8 +10,16 @@ const ErrorPage = () => {
         <div className="w-sm lg:w-xl">
           <img className="" src="/public/pagenotfound.svg" alt="" />
         </div>
+        <div className="">
+          <h1 className="text-4xl font-bold text-red-400 mt-4">
+            404-Page not found
+          </h1>
+          <p className="font-bold mt-2">
+            Oops! The page you're looking for doesn't exist.
+          </p>
+        </div>
         <NavLink to={"/"}>
-          <button className="btn rounded-4xl mt-4 lg:w-xl bg-[#6C63FF] text-white">
+          <button className="btn  mt-4  bg-[#6C63FF] text-white">
             Back to home page
           </button>
         </NavLink>

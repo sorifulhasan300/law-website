@@ -10,7 +10,7 @@ const BookingCard = ({ filterLowyer, booking, setBooking }) => {
     deleteIdLocalStorage(id);
     const bookingData = booking.filter((book) => book.id !== id);
     setBooking(bookingData);
-    toast.success("Cencel booking sucsessfuly");
+    toast.error("Appointment cancel");
   };
   return (
     <div className="shadow-sm border-1 border-gray-300 p-4 mt-8 rounded-2xl mb-20">
