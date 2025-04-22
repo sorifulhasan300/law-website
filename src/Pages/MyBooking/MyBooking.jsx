@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router";
 import { getIdLocalStorage } from "../../Utility/saveData";
 import BookingCard from "./BookingCard";
 import BookingChart from "../BookingCart/BookingChart";
+import NoBookingFound from "../../Components/NoBookingFound/NoBookingFound";
 
 const MyBooking = () => {
   const [booking, setBooking] = useState([]);
@@ -17,7 +18,7 @@ const MyBooking = () => {
     <div className="">
       {booking.length < 1 ? (
         <div className="h-dvh">
-          <h1>No Data Avail Availe</h1>
+         <NoBookingFound></NoBookingFound>
         </div>
       ) : (
         <div className="">

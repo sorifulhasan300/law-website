@@ -3,12 +3,11 @@ import { Navigate, NavLink, useLoaderData, useParams } from "react-router";
 import { saveIdLocalStorage } from "../Utility/saveData";
 
 const LawyerDetails = () => {
-  const { Id } = useParams();
-  const lawyerData = useLoaderData().lawyer;
-  const layerDetails = lawyerData.find((lawyer) => {
-    return lawyer.id === parseInt(Id);
-  });
-
+  // const { Id } = useParams();
+  // const lawyerData = useLoaderData().lawyer;
+  // const layerDetails = lawyerData.find((lawyer) => {
+  //   return lawyer.id === parseInt(Id);
+  // });
   const {
     name,
     id,
@@ -20,7 +19,22 @@ const LawyerDetails = () => {
     availability,
     consultation_fee,
     appointment,
-  } = layerDetails;
+  } = useLoaderData().lawyer;
+
+  console.log(name);
+
+  // const {
+  //   name,
+  //   id,
+  //   experience,
+  //   status,
+  //   specialty,
+  //   license_number,
+  //   image,
+  //   availability,
+  //   consultation_fee,
+  //   appointment,
+  // } = layerDetails;
 
   const handleBookDoctor = (id) => {
     saveIdLocalStorage(id);

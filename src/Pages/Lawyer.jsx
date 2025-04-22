@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import LawyerCard from "./LawyerCard";
 import Counter from "./Counter/Counter";
 import Spiner from "../Components/Spiner/Spiner";
@@ -22,8 +21,8 @@ const Lawyer = ({ data }) => {
   return (
     <div className="">
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-        {lawyerData?.map((lawyer) => (
-          <div>
+        {lawyerData?.map((lawyer, index) => (
+          <div key={index}>
             <LawyerCard lawyer={lawyer}></LawyerCard>
           </div>
         ))}
@@ -32,12 +31,16 @@ const Lawyer = ({ data }) => {
       <div className=" flex justify-center mt-8">
         <button
           onClick={() => handleShowAll()}
-          className="btn place-items-center rounded-4xl bg-[#0EA106] text-white"
+          className={
+            showAll
+              ? "btn place-items-center rounded-4xl bg-[#0EA106] text-white"
+              : ""
+          }
         >
-          {showAll ? "Show All Lawyer " : "Close All Lawyer"}
+          {showAll ? "Show All Lawyer " : ""}
         </button>
       </div>
-      <Counter delay={2} end={100}></Counter>
+      <Counter></Counter>
     </div>
   );
 };

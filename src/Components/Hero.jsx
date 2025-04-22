@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div
-      className="hero min-h-screen rounded-2xl w-11/12 mx-auto"
+      className="hero min-h-screen rounded-2xl w-11/12 mx-auto mb-8"
       style={{
         backgroundImage: "url(https://i.ibb.co.com/XkX6Q691/hero.png)",
       }}

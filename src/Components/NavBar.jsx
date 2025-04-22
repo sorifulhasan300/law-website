@@ -6,25 +6,33 @@ const NavBar = () => {
     <div className="flex lg:flex-row  flex-col gap-4  lg:gap-8">
       <NavLink
         to={"/"}
-        className={({ isActive }) => (isActive ? "text-red-500" : "")}
+        className={({ isActive }) =>
+          isActive ? "border-b-2 font-bold" : "font-semibold"
+        }
       >
         Home
       </NavLink>
       <NavLink
         to={"myBooking"}
-        className={({ isActive }) => (isActive ? "text-red-500" : "")}
+        className={({ isActive }) =>
+          isActive ? "border-b-2 font-bold" : "font-semibold"
+        }
       >
         My-Bookings
       </NavLink>
       <NavLink
-        to={"details/id"}
-        className={({ isActive }) => (isActive ? "text-red-500" : "")}
+        to={"/blog"}
+        className={({ isActive }) =>
+          isActive ? "border-b-2 font-bold" : "font-semibold"
+        }
       >
         Blogs
       </NavLink>
       <NavLink
-        to={"/"}
-        className={({ isActive }) => (isActive ? "text-red-500" : "")}
+        to={"/contact"}
+        className={({ isActive }) =>
+          isActive ? "border-b-2 font-bold" : "font-semibold"
+        }
       >
         Contact Us
       </NavLink>

@@ -1,0 +1,27 @@
+[
+  {
+    "question": "What is `useState` and how does it work in React?",
+    "answer": "",
+    "date": "2024-11-05"
+  },
+  {
+    "question": "What is the purpose of `useEffect` in React?",
+    "answer": "",
+    "date": "2025-01-13"
+  },
+  {
+    "question": "What is a custom hook in React and when should you use one?",
+    "answer": "",
+    "date": "2024-12-27"
+  },
+  {
+    "question": "Difference between controlled and uncontrolled components. Which one is better?",
+    "answer": "",
+    "date": "2025-03-19"
+  },
+  {
+    "question": "Tell us something about `useFormStatus()` in React.",
+    "answer": "",
+    "date": "2024-10-22"
+  }
+]
