@@ -1,8 +1,15 @@
 import React from "react";
-import { Navigate, NavLink, useLoaderData, useParams } from "react-router";
+import {
+  Navigate,
+  NavLink,
+  useLoaderData,
+  useNavigate,
+  useParams,
+} from "react-router";
 import { saveIdLocalStorage } from "../Utility/saveData";
 
 const LawyerDetails = () => {
+  const navigate = useNavigate();
   const {
     name,
     id,
@@ -19,8 +26,10 @@ const LawyerDetails = () => {
   console.log(name);
 
   const handleBookDoctor = (id, name) => {
-    saveIdLocalStorage(id, name);
-    // Navigate("/myBooking");
+    const isOkay = saveIdLocalStorage(id, name);
+    if (isOkay) {
+      navigate("/myBooking");
+    }
   };
   return (
     <div className="w-11/12 mx-auto ">
@@ -91,14 +100,12 @@ const LawyerDetails = () => {
           </span>
         </div>
         <div className="p-4 m-4">
-          <NavLink to={"/myBooking"}>
-            <button
-              onClick={() => handleBookDoctor(id, name)}
-              className="w-full btn rounded-4xl bg-[#0EA106] text-white"
-            >
-              Book Appointment Now
-            </button>
-          </NavLink>
+          <button
+            onClick={() => handleBookDoctor(id, name)}
+            className="w-full btn rounded-4xl bg-[#0EA106] text-white"
+          >
+            Book Appointment Now
+          </button>
         </div>
       </div>
     </div>

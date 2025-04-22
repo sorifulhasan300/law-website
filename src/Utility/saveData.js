@@ -13,13 +13,14 @@ const saveIdLocalStorage = (id, name) => {
   console.log(storId);
   const filterId = storId?.find((strId) => strId == id);
   if (filterId) {
-    toast.error("Lawyer Already Booked");
+    toast.error(`${name} Already Booked`);
     return;
   } else {
     storId.push(id);
     const stringifyId = JSON.stringify(storId);
     localStorage.setItem("lawyerId", stringifyId);
     toast.success(`${name} Booking Successful`);
+    return true;
   }
 };
 

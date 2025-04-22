@@ -22,7 +22,7 @@ const LawyerCard = ({ lawyer }) => {
                 </p>
               </div>
               <div className="">
-                <h1 className="text-3xl font-bold">{name}</h1>
+                <h1 className="text-2xl font-bold">{name}</h1>
                 <p>{specialty}</p>
                 <p>{license_number}</p>
                 <Link to={`/details/${id}`}>

@@ -5,7 +5,6 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
 const Lawyers = () => {
-  // console.log(data);
   const data = useLoaderData().lawyer;
  
   
@@ -15,7 +14,7 @@ const Lawyers = () => {
       {/*  Lawyers  titles*/}
       <div className="text-center place-items-center mb-4">
         <h1 className="text-3xl font-bold ">Our Best Lawyers</h1>
-        <p className="text-gray-600 lg:w-6xl ">
+        <p className="text-gray-600 ">
           Our platform connects you with verified, experienced Lawyers across
           various specialties — all at your convenience. Whether it's a routine
           checkup or urgent consultation, book appointments in minutes and

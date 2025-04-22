@@ -8,7 +8,7 @@
       "license_number": "BD 12451254",
       "experience": "5+ Years",
       "availability": ["Sunday", "Monday", "Thursday"],
-      "consultation_fee": 273,
+      "consultation_fee": 3000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -23,7 +23,7 @@
       "license_number": "BD 76382913",
       "experience": "7+ Years",
       "availability": ["Tuesday", "Wednesday", "Friday"],
-      "consultation_fee": 350,
+      "consultation_fee": 5000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -38,7 +38,7 @@
       "license_number": "BD 45128799",
       "experience": "10+ Years",
       "availability": ["Monday", "Thursday"],
-      "consultation_fee": 400,
+      "consultation_fee": 2500,
       "status": "Available",
       "appointment": {
         "can_book_today": false,
@@ -53,7 +53,7 @@
       "license_number": "BD 99881234",
       "experience": "4+ Years",
       "availability": ["Sunday", "Tuesday"],
-      "consultation_fee": 290,
+      "consultation_fee": 5000,
       "status": "Unavailable",
       "appointment": {
         "can_book_today": false,
@@ -68,7 +68,7 @@
       "license_number": "BD 12039485",
       "experience": "6+ Years",
       "availability": ["Wednesday", "Saturday"],
-      "consultation_fee": 310,
+      "consultation_fee": 6000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -83,7 +83,7 @@
       "license_number": "BD 87234509",
       "experience": "8+ Years",
       "availability": ["Monday", "Friday"],
-      "consultation_fee": 500,
+      "consultation_fee": 3500,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -98,7 +98,7 @@
       "license_number": "BD 62345789",
       "experience": "3+ Years",
       "availability": ["Tuesday", "Thursday", "Saturday"],
-      "consultation_fee": 260,
+      "consultation_fee": 2000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -113,7 +113,7 @@
       "license_number": "BD 83746509",
       "experience": "9+ Years",
       "availability": ["Sunday", "Wednesday"],
-      "consultation_fee": 375,
+      "consultation_fee": 8000,
       "status": "Unavailable",
       "appointment": {
         "can_book_today": false,
@@ -128,7 +128,7 @@
       "license_number": "BD 99012378",
       "experience": "6+ Years",
       "availability": ["Monday", "Thursday"],
-      "consultation_fee": 330,
+      "consultation_fee": 4000,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -143,7 +143,7 @@
       "license_number": "BD 56789012",
       "experience": "5+ Years",
       "availability": ["Tuesday", "Friday"],
-      "consultation_fee": 295,
+      "consultation_fee": 3500,
       "status": "Available",
       "appointment": {
         "can_book_today": false,
@@ -158,7 +158,7 @@
       "license_number": "BD 45671239",
       "experience": "7+ Years",
       "availability": ["Thursday", "Saturday"],
-      "consultation_fee": 340,
+      "consultation_fee": 2500,
       "status": "Available",
       "appointment": {
         "can_book_today": true,
@@ -173,7 +173,7 @@
       "license_number": "BD 77778901",
       "experience": "12+ Years",
       "availability": ["Sunday", "Tuesday"],
-      "consultation_fee": 450,
+      "consultation_fee": 4500,
       "status": "Unavailable",
       "appointment": {
         "can_book_today": false,

@@ -67,7 +67,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="hidden lg:block w-2/12">
-          <img className="" src="/public/logo.png" alt="" />
+          <img className="" src="/logo.png" alt="" />
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
