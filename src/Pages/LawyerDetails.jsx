@@ -22,7 +22,9 @@ const LawyerDetails = () => {
   const handleBookDoctor = (id, name) => {
     const isOkay = saveIdLocalStorage(id, name);
     if (isOkay) {
-      navigate("/myBooking");
+      setTimeout(() => {
+        navigate("/myBooking");
+      }, 500);
     }
   };
   return (

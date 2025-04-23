@@ -15,13 +15,12 @@ const saveIdLocalStorage = (id, name) => {
   if (filterId) {
     toast.error(`Appointment allready scheduled for today`);
     return;
-  } else {
-    storId.push(id);
-    const stringifyId = JSON.stringify(storId);
-    localStorage.setItem("lawyerId", stringifyId);
-    toast.success(`Appointment scheduled for ${name} Successfully`);
-    return true;
   }
+  storId.push(id);
+  const stringifyId = JSON.stringify(storId);
+  localStorage.setItem("lawyerId", stringifyId);
+  toast.success(`Appointment scheduled for ${name} Successfully`);
+  return true;
 };
 
 const deleteIdLocalStorage = (id) => {
