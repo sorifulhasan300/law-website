@@ -24,7 +24,7 @@ const LawyerDetails = () => {
     if (isOkay) {
       setTimeout(() => {
         navigate("/myBooking");
-      }, 500);
+      }, 1000);
     }
   };
   return (
