@@ -8,12 +8,18 @@ import { ToastContainer } from "react-toastify";
 function App() {
   const navigation = useNavigation();
   const isNavigating = Boolean(navigation.location);
+  if (isNavigating) {
+    return (
+      <div className="place-items-center mt-20">
+        <Spiner></Spiner>
+      </div>
+    );
+  }
   return (
     <div className="font-mulish">
       <ToastContainer></ToastContainer>
       <NavBar></NavBar>
-      <div className="w-11/12 mx-auto">
-        <div className="place-items-center mt-20">{isNavigating && <Spiner />}</div>
+      <div className="w-11/12 mx-auto mt-20">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
