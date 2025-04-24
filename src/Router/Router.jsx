@@ -9,12 +9,14 @@ import MyBooking from "../Pages/MyBooking/MyBooking";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Blog from "../Pages/Blog/Blog";
 import NoLawyerFound from "../Components/NoLawyerFound/NoLawyerFound";
+import Spiner from "../Components/Spiner/Spiner";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
     errorElement: <ErrorPage></ErrorPage>,
+    hydrateFallbackElement: <Spiner></Spiner>,
     children: [
       {
         index: true,
@@ -55,6 +57,11 @@ const router = createBrowserRouter([
         path: "/blog",
         loader: () => fetch("/blog.json"),
         Component: Blog,
+      },
+      {
+        path: "/contact",
+        Component: ErrorPage,
+        loader: () => fetch("/blog.json"),
       },
     ],
   },

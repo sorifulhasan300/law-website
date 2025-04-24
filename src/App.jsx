@@ -1,4 +1,4 @@
-import { Outlet, useNavigation } from "react-router";
+import { Outlet, useLocation, useNavigation } from "react-router";
 import "./App.css";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -8,21 +8,29 @@ import { ToastContainer } from "react-toastify";
 function App() {
   const navigation = useNavigation();
   const isNavigating = Boolean(navigation.location);
-  if (isNavigating) {
-    return (
-      <div className="place-items-center mt-20">
-        <Spiner></Spiner>
-      </div>
-    );
-  }
+  const location = useLocation();
+  const hideFooterRoutes = ["/contact"];
+  const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
+  // if (isNavigating) {
+  //   return <Spiner></Spiner>;
+  // }
   return (
     <div className="font-mulish">
       <ToastContainer></ToastContainer>
       <NavBar></NavBar>
-      <div className="w-11/12 mx-auto mt-20">
-        <Outlet></Outlet>
-      </div>
-      <Footer></Footer>
+
+      {isNavigating ? (
+        <div className="">
+          <Spiner></Spiner>;
+        </div>
+      ) : (
+        <div className="">
+          <div className="w-11/12 mx-auto mt-20">
+            <Outlet></Outlet>
+          </div>
+        </div>
+      )}
+      {!shouldHideFooter && <Footer></Footer>}
     </div>
   );
 }
